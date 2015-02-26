@@ -1,6 +1,6 @@
 ﻿using System;
 
-
+//hola mundo//
 namespace AppGestionBnacaria
 {
     public class Ahorros : Cuentas
@@ -44,7 +44,6 @@ namespace AppGestionBnacaria
         {
             throw new System.NotImplementedException();
         }
-		//hola mundo//
-        
+		        
 	}
 }
