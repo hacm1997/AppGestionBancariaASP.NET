@@ -3,7 +3,7 @@
 
 namespace AppGestionBnacaria
 {
-    public class Cuentas
+    public abstract class Cuentas
     {
         //Variables//
         private string identificacion;
@@ -61,11 +61,17 @@ namespace AppGestionBnacaria
 
             return result;
         }
-		
-		public override int GetHashCode()
+
+        public override int GetHashCode()
         {
             return this.ToString().GetHashCode();
         }
-		
+
+        public abstract string despositar(double valor);
+        public abstract string retirar(double valor);
+        public abstract string balanceActual(double valor, char movimiento);
+
     }
+         
+
 }
