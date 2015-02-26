@@ -5,11 +5,12 @@ namespace AppGestionBnacaria
 {
     public abstract class Cuentas
     {
-        //Variables//
+        //Atributos//
         private string identificacion;
         private string balance;
         private string idcliente;
 
+        //Propiedades//
         public string Identificacion
         {
             get { return identificacion; }
@@ -27,7 +28,8 @@ namespace AppGestionBnacaria
             get { return idcliente; }
             set { idcliente = value; }
         }
-
+        
+        //Constructores//
         public Cuentas()
         {
             this.identificacion = "name";
@@ -42,6 +44,7 @@ namespace AppGestionBnacaria
             this.idcliente = idcliente;
         }
 		
+        //Metodos de Sobre Escrito//
 		public override string ToString()
 		{
 			return "\n=================================\n" +
