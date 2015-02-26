@@ -5,6 +5,7 @@ namespace AppGestionBnacaria
 {
     public class Cuentas
     {
+        //Variables//
         private string identificacion;
         private string balance;
         private string idcliente;
